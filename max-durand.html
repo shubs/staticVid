@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Offre Exclusive pour Max Durand | Formation Elite Patrimoine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gold-gradient { background: linear-gradient(135deg, #f5af19 0%, #f12711 100%); }
+        .money-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        .pulse-border {
+            animation: pulse-border 2s infinite;
+        }
+        @keyframes pulse-border {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(245, 175, 25, 0.7); }
+            50% { box-shadow: 0 0 0 20px rgba(245, 175, 25, 0); }
+        }
+        .counter { font-variant-numeric: tabular-nums; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="money-float absolute top-10 left-10 text-6xl">💰</div>
+            <div class="money-float absolute top-20 right-20 text-5xl" style="animation-delay: 0.5s;">💵</div>
+            <div class="money-float absolute bottom-10 left-1/4 text-4xl" style="animation-delay: 1s;">💎</div>
+            <div class="money-float absolute top-1/3 right-1/3 text-5xl" style="animation-delay: 1.5s;">🏆</div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="mb-6">
+                <span class="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider">
+                    ⚡ Offre limitée à 1 personne : MAX DURAND
+                </span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                Deviens le <span class="text-yellow-400">WOLF</span> de la<br>Gestion de Patrimoine
+            </h1>
+            <p class="text-xl md:text-2xl text-purple-200 mb-8">
+                La formation secrète qui transforme les gestionnaires moyens en <strong>LÉGENDES</strong> du patrimoine
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <div class="text-center">
+                    <div class="text-4xl font-black text-yellow-400 counter" id="price">12 997€</div>
+                    <div class="text-sm text-purple-300 line-through">Normalement 49 997€</div>
+                </div>
+                <button onclick="celebrate()" class="gold-gradient px-10 py-5 rounded-xl text-xl font-bold text-white pulse-border hover:scale-105 transition-transform">
+                    🔥 JE VEUX REJOINDRE L'ÉLITE 🔥
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 px-4 bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">📊 Nos Résultats (100% Réels*)</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gray-700 p-8 rounded-2xl text-center">
+                    <div class="text-5xl font-black text-green-400 counter">+847%</div>
+                    <div class="text-gray-400 mt-2">ROI Moyen des Élèves</div>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-2xl text-center">
+                    <div class="text-5xl font-black text-blue-400 counter">3,247</div>
+                    <div class="text-gray-400 mt-2">Clients Ultra-Riches Conquis</div>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-2xl text-center">
+                    <div class="text-5xl font-black text-purple-400 counter">0</div>
+                    <div class="text-gray-400 mt-2">Plaintes AMF (presque)</div>
+                </div>
+            </div>
+            <div class="bg-gray-700 p-8 rounded-2xl">
+                <h3 class="text-xl font-bold mb-4 text-center">📈 Performance vs. ETF World (Source: Trust Me Bro™)</h3>
+                <canvas id="performanceChart" height="200"></canvas>
+            </div>
+            <p class="text-xs text-gray-500 text-center mt-4">*Les résultats passés ne garantissent pas les résultats futurs. En fait, rien ne garantit quoi que ce soit. C'est le fun de la finance.</p>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="py-16 px-4 gradient-bg">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">🎓 Ce que tu vas apprendre, Max</h2>
+            <div class="space-y-4">
+                <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-yellow-400">Module 1: L'Art du Costume à 5000€</h3>
+                    <p class="text-purple-200">Comment paraître riche pour attirer les vrais riches. Le secret est dans les boutons de manchette.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-yellow-400">Module 2: Vocabulaire Premium</h3>
+                    <p class="text-purple-200">"Allocation d'actifs", "Diversification", "Alpha"... 47 mots pour embrouiller tes clients.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-yellow-400">Module 3: Les Frais Cachés (Masterclass)</h3>
+                    <p class="text-purple-200">Comment facturer 3% par an tout en disant "c'est le marché".</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-yellow-400">Module 4: L'Art du PowerPoint Intimidant</h3>
+                    <p class="text-purple-200">Graphiques incompréhensibles + jargon = confiance aveugle.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-yellow-400">🔥 BONUS: Script "Ce n'est pas une perte, c'est une opportunité"</h3>
+                    <p class="text-purple-200">Comment expliquer un -40% sans perdre le client.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Offer Section -->
+    <section class="py-16 px-4 bg-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="bg-gradient-to-r from-yellow-500 to-orange-500 p-1 rounded-2xl">
+                <div class="bg-gray-900 p-10 rounded-2xl">
+                    <h2 class="text-3xl font-bold mb-6">💼 OFFRE D'EMPLOI EXCLUSIVE</h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        On recherche un <strong class="text-yellow-400">Chief Patrimoine Officer</strong> pour rejoindre notre équipe d'élite.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6 text-left mb-8">
+                        <div>
+                            <h4 class="font-bold text-green-400 mb-2">✅ Avantages</h4>
+                            <ul class="text-gray-400 space-y-1">
+                                <li>• Salaire : "Compétitif" (on verra)</li>
+                                <li>• Montre de fonction (Casio dorée)</li>
+                                <li>• Bureau avec vue (sur le parking)</li>
+                                <li>• Café illimité (Nespresso)</li>
+                                <li>• Titre LinkedIn impressionnant</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-400 mb-2">📋 Prérequis</h4>
+                            <ul class="text-gray-400 space-y-1">
+                                <li>• Savoir dire "c'est une correction, pas un krach"</li>
+                                <li>• Avoir déjà porté un costume</li>
+                                <li>• Connaître au moins 3 vins chers</li>
+                                <li>• S'appeler Max Durand (obligatoire)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button onclick="celebrate()" class="gold-gradient px-10 py-5 rounded-xl text-xl font-bold text-white hover:scale-105 transition-transform">
+                        📩 POSTULER MAINTENANT (C'est toi Max, on sait)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="py-12 px-4 bg-red-600">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">⏰ ATTENTION MAX !</h2>
+            <p class="text-xl">Cette offre expire dans <span class="font-black text-yellow-300" id="countdown">04:59</span></p>
+            <p class="text-sm mt-2 opacity-80">(En vrai non, mais ça fait plus urgent)</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 bg-gray-900 text-center text-gray-500 text-sm">
+        <p>© 2026 Shubham Corp. - Cette page est évidemment une blague 😂</p>
+        <p class="mt-2">Fait avec ❤️ et beaucoup de sarcasme par <strong>Shubot</strong> 🤖</p>
+        <p class="mt-4 text-xs">Disclaimer: Ceci n'est pas un conseil financier. En fait, c'est exactement le contraire d'un conseil financier. Si tu prends des décisions d'investissement basées sur cette page, tu mérites ce qui t'arrive.</p>
+    </footer>
+
+    <script>
+        // Performance Chart
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2020', '2021', '2022', '2023', '2024', '2025'],
+                datasets: [{
+                    label: 'ETF World (Boring)',
+                    data: [100, 120, 105, 130, 145, 160],
+                    borderColor: '#60a5fa',
+                    backgroundColor: 'rgba(96, 165, 250, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }, {
+                    label: 'Notre Formation Elite™',
+                    data: [100, 180, 250, 420, 690, 1200],
+                    borderColor: '#fbbf24',
+                    backgroundColor: 'rgba(251, 191, 36, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: { color: '#fff' }
+                    }
+                },
+                scales: {
+                    y: {
+                        ticks: { color: '#9ca3af' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#9ca3af' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Countdown
+        let seconds = 299;
+        setInterval(() => {
+            seconds--;
+            if (seconds < 0) seconds = 299;
+            const m = Math.floor(seconds / 60);
+            const s = seconds % 60;
+            document.getElementById('countdown').textContent = 
+                `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }, 1000);
+
+        // Confetti
+        function celebrate() {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#fbbf24', '#f59e0b', '#10b981', '#3b82f6']
+            });
+            setTimeout(() => {
+                alert("🎉 Félicitations Max ! Tu viens de tomber dans le piège le plus élaboré de l'histoire. Bisous de Shubham 😘");
+            }, 500);
+        }
+
+        // Animate numbers on scroll
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            counter.style.opacity = '0';
+            setTimeout(() => {
+                counter.style.transition = 'opacity 0.5s';
+                counter.style.opacity = '1';
+            }, 500);
+        });
+    </script>
+</body>
+</html>
