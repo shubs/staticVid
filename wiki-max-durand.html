@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxime Durand (financier) — Wikipédia</title>
+    <link rel="icon" href="https://www.wikipedia.org/static/favicon/wikipedia.ico">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #202122;
+            background: #f8f9fa;
+        }
+        
+        .header {
+            background: #fff;
+            border-bottom: 1px solid #a2a9b1;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo {
+            height: 50px;
+        }
+        
+        .header-text {
+            font-size: 12px;
+            color: #54595d;
+        }
+        
+        .header-text strong {
+            font-size: 18px;
+            color: #000;
+            display: block;
+        }
+        
+        .tabs {
+            background: #fff;
+            border-bottom: 1px solid #a2a9b1;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .tab {
+            padding: 10px 15px;
+            color: #0645ad;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .tab.active {
+            background: #fff;
+            border-bottom: 2px solid #36c;
+            color: #202122;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            max-width: 1600px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        
+        .sidebar {
+            width: 160px;
+            padding: 20px 10px;
+            border-right: 1px solid #a2a9b1;
+            font-size: 12px;
+        }
+        
+        .sidebar-section {
+            margin-bottom: 15px;
+        }
+        
+        .sidebar-title {
+            font-weight: bold;
+            color: #54595d;
+            margin-bottom: 5px;
+        }
+        
+        .sidebar a {
+            color: #0645ad;
+            text-decoration: none;
+            display: block;
+            padding: 2px 0;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 20px 30px;
+            max-width: 960px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+        }
+        
+        .notice {
+            background: #fef6e7;
+            border: 1px solid #fc3;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        
+        .notice-icon {
+            margin-right: 5px;
+        }
+        
+        .infobox {
+            float: right;
+            width: 280px;
+            margin: 0 0 15px 20px;
+            border: 1px solid #a2a9b1;
+            background: #f8f9fa;
+            font-size: 13px;
+        }
+        
+        .infobox-title {
+            background: #cfe3ff;
+            padding: 8px 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .infobox-image {
+            text-align: center;
+            padding: 10px;
+            background: #fff;
+        }
+        
+        .infobox-image img {
+            max-width: 220px;
+            border: 1px solid #a2a9b1;
+        }
+        
+        .infobox-caption {
+            font-size: 11px;
+            color: #54595d;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        .infobox-row {
+            display: flex;
+            border-top: 1px solid #a2a9b1;
+        }
+        
+        .infobox-label {
+            width: 90px;
+            padding: 5px 10px;
+            background: #eaecf0;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .infobox-value {
+            flex: 1;
+            padding: 5px 10px;
+            background: #fff;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            margin: 25px 0 15px;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+        }
+        
+        h3 {
+            font-size: 17px;
+            margin: 20px 0 10px;
+        }
+        
+        .reference {
+            font-size: 11px;
+            vertical-align: super;
+            color: #0645ad;
+        }
+        
+        blockquote {
+            border-left: 3px solid #a2a9b1;
+            padding-left: 15px;
+            margin: 15px 0;
+            color: #54595d;
+            font-style: italic;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .toc-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .toc ol {
+            margin-left: 20px;
+        }
+        
+        .toc li {
+            margin: 5px 0;
+        }
+        
+        .categories {
+            background: #f8f9fa;
+            border-top: 1px solid #a2a9b1;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 13px;
+        }
+        
+        .categories-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .category-links a {
+            background: #eaecf0;
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        
+        .edit-link {
+            font-size: 12px;
+            color: #54595d;
+        }
+        
+        sup {
+            font-size: 10px;
+        }
+        
+        .citation-needed {
+            background: #fff3cd;
+            padding: 0 3px;
+            font-size: 11px;
+            color: #856404;
+        }
+        
+        .humor-warning {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/103px-Wikipedia-logo-v2.svg.png" alt="Wikipedia">
+        <div class="header-text">
+            <strong>Wikipédia</strong>
+            l'encyclopédie libre
+        </div>
+    </div>
+    
+    <div class="tabs">
+        <a href="#" class="tab active">Article</a>
+        <a href="#" class="tab">Discussion</a>
+        <a href="#" class="tab">Modifier</a>
+        <a href="#" class="tab">Historique</a>
+    </div>
+    
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Navigation</div>
+                <a href="#">Accueil</a>
+                <a href="#">Portails thématiques</a>
+                <a href="#">Article au hasard</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Contribuer</div>
+                <a href="#">Débuter sur Wikipédia</a>
+                <a href="#">Aide</a>
+                <a href="#">Communauté</a>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <h1>Maxime Durand (financier)</h1>
+            
+            <div class="notice">
+                <span class="notice-icon">⚠️</span>
+                <strong>Cet article ne cite pas suffisamment ses sources</strong> (janvier 2026). 
+                Si vous disposez d'ouvrages ou d'articles de référence ou si vous connaissez des sites web de qualité traitant du thème abordé ici, merci de compléter l'article en donnant les <a href="#">références utiles à sa vérifiabilité</a> et en les liant à la section « Notes et références ».
+            </div>
+            
+            <div class="infobox">
+                <div class="infobox-title">Maxime Durand</div>
+                <div class="infobox-image">
+                    <img src="https://shubs.github.io/staticVid/assets/placeholder-portrait.png" alt="Maxime Durand" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22250%22><rect fill=%22%23ddd%22 width=%22200%22 height=%22250%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2220%22 fill=%22%23666%22>📈 Max</text></svg>'">
+                </div>
+                <div class="infobox-caption">Maxime Durand lors de la conférence "Frais & Vous" (2024)</div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Naissance</div>
+                    <div class="infobox-value">XX xx 19XX<br><a href="#">France</a></div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Nationalité</div>
+                    <div class="infobox-value">🇫🇷 Française</div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Profession</div>
+                    <div class="infobox-value"><a href="#">Gestionnaire de patrimoine</a>, <a href="#">Entrepreneur</a>, <a href="#">Légende vivante</a></div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Formation</div>
+                    <div class="infobox-value"><a href="#">HETIC</a><br>École de la Vie™</div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">A]Employeurs</div>
+                    <div class="infobox-value"><a href="#">Qonto</a> (ancien)<br><a href="#">RockFi</a> (actuel)</div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Connu pour</div>
+                    <div class="infobox-value">Révolutionner la gestion de patrimoine par des <i>méthodes innovantes</i><sup class="citation-needed">[réf. nécessaire]</sup></div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Site web</div>
+                    <div class="infobox-value"><a href="https://shubs.github.io/staticVid/max-durand.html">Formation Elite</a></div>
+                </div>
+            </div>
+            
+            <p>
+                <b>Maxime Durand</b>, dit « <b>Max</b> » ou « <b>Le Loup d'Annecy</b> »<sup class="reference">[1]</sup>, est un <a href="#">gestionnaire de patrimoine</a> et <a href="#">entrepreneur</a> français né au XXe siècle. Il est principalement connu pour ses contributions controversées mais indéniablement <i>géniales</i> au monde de la <a href="#">finance personnelle</a><sup class="citation-needed">[réf. nécessaire]</sup>.
+            </p>
+            
+            <p>
+                Ancien développeur chez <a href="#">Qonto</a>, il a effectué une reconversion spectaculaire dans la gestion de patrimoine, domaine où il affirme avoir « découvert sa vraie vocation : aider les gens à optimiser leur argent tout en optimisant le sien »<sup class="reference">[2]</sup>.
+            </p>
+            
+            <div class="toc">
+                <div class="toc-title">Sommaire</div>
+                <ol>
+                    <li><a href="#biographie">Biographie</a>
+                        <ol>
+                            <li><a href="#jeunesse">Jeunesse et formation</a></li>
+                            <li><a href="#qonto">Période Qonto</a></li>
+                            <li><a href="#reconversion">La grande reconversion</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#methode">La « Méthode Durand »</a></li>
+                    <li><a href="#controverses">Controverses</a></li>
+                    <li><a href="#citations">Citations célèbres</a></li>
+                    <li><a href="#recompenses">Récompenses</a></li>
+                </ol>
+            </div>
+            
+            <h2 id="biographie">Biographie</h2>
+            
+            <h3 id="jeunesse">Jeunesse et formation</h3>
+            <p>
+                Maxime Durand grandit dans un environnement où l'argent était « un sujet tabou mais omniprésent », selon ses propres mots lors d'une interview pour le podcast <i>Finance & Chill</i><sup class="reference">[3]</sup>. Il développe très tôt un intérêt pour les chiffres, les pourcentages, et particulièrement les pourcentages appliqués aux frais de gestion.
+            </p>
+            <p>
+                Après des études à <a href="#">HETIC</a>, il se lance dans le développement web avant de réaliser que « le vrai code, c'est celui de la richesse »<sup class="citation-needed">[réf. nécessaire]</sup>.
+            </p>
+            
+            <h3 id="qonto">Période Qonto</h3>
+            <p>
+                En tant que développeur backend chez <a href="#">Qonto</a>, Durand acquiert une connaissance approfondie des flux financiers. Ses collègues de l'époque le décrivent comme « quelqu'un qui posait beaucoup de questions sur les marges »<sup class="reference">[4]</sup>.
+            </p>
+            
+            <h3 id="reconversion">La grande reconversion</h3>
+            <p>
+                En 2023, Maxime Durand quitte le monde de la tech pour se lancer dans la gestion de patrimoine. Il fonde <a href="#">RockFi</a>, une plateforme qu'il décrit comme « le Netflix de la gestion de patrimoine, mais où c'est vous qui payez l'abonnement ET le contenu »<sup class="reference">[5]</sup>.
+            </p>
+            
+            <h2 id="methode">La « Méthode Durand »</h2>
+            <p>
+                La « Méthode Durand » est un système de gestion patrimoniale développé par Maxime Durand. Elle repose sur trois piliers fondamentaux<sup class="reference">[6]</sup> :
+            </p>
+            <ol style="margin-left: 30px; margin-bottom: 15px;">
+                <li><b>La Confiance Aveugle</b> : « Le client doit faire confiance, pas comprendre »</li>
+                <li><b>La Diversification des Frais</b> : « Un seul type de frais, c'est de la paresse »</li>
+                <li><b>Le PowerPoint Intimidant</b> : « Si le client comprend le graphique, c'est que le graphique n'est pas assez complexe »</li>
+            </ol>
+            
+            <blockquote>
+                « Un bon gestionnaire de patrimoine, c'est comme un bon magicien : le client ne doit jamais voir où part l'argent. »
+                <br>— Maxime Durand, conférence TEDx Annecy 2025<sup class="citation-needed">[réf. nécessaire]</sup>
+            </blockquote>
+            
+            <h2 id="controverses">Controverses</h2>
+            <p>
+                En janvier 2026, l'<a href="#">Autorité des Marchés Financiers</a> a ouvert une enquête sur certaines pratiques de communication de Durand<sup class="reference">[7]</sup>. Celui-ci a répondu par un communiqué lapidaire : « C'est une correction, pas un krach de ma réputation. »
+            </p>
+            <p>
+                Il a également été critiqué pour avoir affirmé que « les ETF, c'est pour les gens qui n'ont pas de vrais amis gestionnaires »<sup class="reference">[8]</sup>.
+            </p>
+            
+            <h2 id="citations">Citations célèbres</h2>
+            <ul style="margin-left: 30px; margin-bottom: 15px;">
+                <li>« L'argent ne fait pas le bonheur, mais les frais de gestion, si. » (2024)</li>
+                <li>« Investir sans gestionnaire, c'est comme opérer sans chirurgien : faisable, mais pourquoi prendre le risque ? » (2025)</li>
+                <li>« Je ne sous-performe pas le marché, j'offre de la sérénité. Ça n'a pas de prix. Enfin si, 2.5% par an. » (2025)</li>
+                <li>« Le CAC 40 monte et descend. Mes frais ne font que monter. C'est ça, la stabilité. » (2026)</li>
+            </ul>
+            
+            <h2 id="recompenses">Récompenses</h2>
+            <ul style="margin-left: 30px; margin-bottom: 15px;">
+                <li>🏆 <b>Certificat d'Excellence AMF</b> - Meilleur Gestionnaire de Patrimoine 2026<sup class="citation-needed">[source fictive]</sup></li>
+                <li>🥇 <b>Prix du Vocabulaire Financier</b> - Académie des Frais Cachés (2025)</li>
+                <li>⭐ <b>Étoile Michelin de la Finance</b> - catégorie "Frais justifiés par le décor du bureau" (2024)</li>
+            </ul>
+            
+            <div class="humor-warning">
+                🎭 <b>DISCLAIMER</b> : Cette page est évidemment une BLAGUE créée par des amis de Max pour lui faire une surprise. 
+                Aucune information n'est vraie (sauf qu'il est vraiment sympa). Bisous Max ! 😘
+                <br><br>
+                <small>— Signé : Shubot 🤖 & Shubham</small>
+            </div>
+            
+            <div class="categories">
+                <div class="categories-title">Catégories :</div>
+                <div class="category-links">
+                    <a href="#">Gestionnaire de patrimoine français</a>
+                    <a href="#">Personnalité liée à Annecy</a>
+                    <a href="#">Légende de la finance</a>
+                    <a href="#">Expert en frais cachés</a>
+                    <a href="#">Ancien de Qonto</a>
+                    <a href="#">Naissance au XXe siècle</a>
+                    <a href="#">Personne trollée par ses amis</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Easter egg : Konami code
+        let konamiCode = [];
+        const secretCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+        
+        document.addEventListener('keydown', (e) => {
+            konamiCode.push(e.keyCode);
+            konamiCode = konamiCode.slice(-10);
+            if (konamiCode.join(',') === secretCode.join(',')) {
+                alert('🎉 EASTER EGG ! Tu as trouvé le code secret ! Max est vraiment une légende (mais pas de la finance, juste en général) 😄');
+            }
+        });
+    </script>
+</body>
+</html>
