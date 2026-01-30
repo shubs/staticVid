@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marianne Medioni — Wikipédia</title>
+    <link rel="icon" href="https://www.wikipedia.org/static/favicon/wikipedia.ico">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #202122;
+            background: #f8f9fa;
+        }
+        
+        .header {
+            background: #fff;
+            border-bottom: 1px solid #a2a9b1;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo { height: 50px; }
+        
+        .header-text {
+            font-size: 12px;
+            color: #54595d;
+        }
+        
+        .header-text strong {
+            font-size: 18px;
+            color: #000;
+            display: block;
+        }
+        
+        .tabs {
+            background: #fff;
+            border-bottom: 1px solid #a2a9b1;
+            padding: 0 20px;
+            display: flex;
+        }
+        
+        .tab {
+            padding: 10px 15px;
+            color: #0645ad;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .tab.active {
+            background: #fff;
+            border-bottom: 2px solid #36c;
+            color: #202122;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            max-width: 1600px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        
+        .sidebar {
+            width: 160px;
+            padding: 20px 10px;
+            border-right: 1px solid #a2a9b1;
+            font-size: 12px;
+        }
+        
+        .sidebar-section { margin-bottom: 15px; }
+        
+        .sidebar-title {
+            font-weight: bold;
+            color: #54595d;
+            margin-bottom: 5px;
+        }
+        
+        .sidebar a {
+            color: #0645ad;
+            text-decoration: none;
+            display: block;
+            padding: 2px 0;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 20px 30px;
+            max-width: 960px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+        }
+        
+        .notice {
+            background: #eaf3ff;
+            border: 1px solid #36c;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        
+        .infobox {
+            float: right;
+            width: 280px;
+            margin: 0 0 15px 20px;
+            border: 1px solid #a2a9b1;
+            background: #f8f9fa;
+            font-size: 13px;
+        }
+        
+        .infobox-title {
+            background: #ffe4ec;
+            padding: 8px 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .infobox-image {
+            text-align: center;
+            padding: 10px;
+            background: #fff;
+        }
+        
+        .infobox-image img {
+            max-width: 220px;
+            border: 1px solid #a2a9b1;
+        }
+        
+        .infobox-caption {
+            font-size: 11px;
+            color: #54595d;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        .infobox-row {
+            display: flex;
+            border-top: 1px solid #a2a9b1;
+        }
+        
+        .infobox-label {
+            width: 90px;
+            padding: 5px 10px;
+            background: #eaecf0;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .infobox-value {
+            flex: 1;
+            padding: 5px 10px;
+            background: #fff;
+        }
+        
+        p { margin-bottom: 15px; }
+        
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        
+        a:hover { text-decoration: underline; }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            margin: 25px 0 15px;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+        }
+        
+        h3 {
+            font-size: 17px;
+            margin: 20px 0 10px;
+        }
+        
+        .reference {
+            font-size: 11px;
+            vertical-align: super;
+            color: #0645ad;
+        }
+        
+        blockquote {
+            border-left: 3px solid #a2a9b1;
+            padding-left: 15px;
+            margin: 15px 0;
+            color: #54595d;
+            font-style: italic;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .toc-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .toc ol { margin-left: 20px; }
+        .toc li { margin: 5px 0; }
+        
+        .categories {
+            background: #f8f9fa;
+            border-top: 1px solid #a2a9b1;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 13px;
+        }
+        
+        .categories-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .category-links a {
+            background: #eaecf0;
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        
+        .citation-needed {
+            background: #fff3cd;
+            padding: 0 3px;
+            font-size: 11px;
+            color: #856404;
+        }
+        
+        .humor-warning {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/103px-Wikipedia-logo-v2.svg.png" alt="Wikipedia">
+        <div class="header-text">
+            <strong>Wikipédia</strong>
+            l'encyclopédie libre
+        </div>
+    </div>
+    
+    <div class="tabs">
+        <a href="#" class="tab active">Article</a>
+        <a href="#" class="tab">Discussion</a>
+        <a href="#" class="tab">Modifier</a>
+        <a href="#" class="tab">Historique</a>
+    </div>
+    
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Navigation</div>
+                <a href="#">Accueil</a>
+                <a href="#">Portails thématiques</a>
+                <a href="#">Article au hasard</a>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <h1>Marianne Medioni</h1>
+            
+            <div class="notice">
+                ⭐ <strong>Article de qualité</strong> — Cet article a été reconnu comme étant particulièrement bien rédigé par la communauté (et par ses amis un jeudi soir).
+            </div>
+            
+            <div class="infobox">
+                <div class="infobox-title">Marianne Medioni</div>
+                <div class="infobox-image">
+                    <div style="width:200px;height:200px;background:linear-gradient(135deg,#ff9a9e,#fecfef);display:flex;align-items:center;justify-content:center;font-size:60px;border-radius:10px;">👩‍💻</div>
+                </div>
+                <div class="infobox-caption">Marianne lors d'un Product Stories meetup (probablement en train d'expliquer un framework)</div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Naissance</div>
+                    <div class="infobox-value">Un jour magnifique<br>🇫🇷 France</div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Nationalité</div>
+                    <div class="infobox-value">🇫🇷 Française</div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Profession</div>
+                    <div class="infobox-value"><a href="#">Product Manager</a>, <a href="#">Researcher</a>, <a href="#">Organisatrice de meetups légendaires</a></div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Formation</div>
+                    <div class="infobox-value">École de la Product Excellence™</div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Employeurs</div>
+                    <div class="infobox-value"><a href="#">Qonto</a> (2018-2022)<br><a href="#">Maki People</a><br><a href="#">Mozza</a> (Freelance)</div>
+                </div>
+                <div class="infobox-row">
+                    <div class="infobox-label">Connue pour</div>
+                    <div class="infobox-value">Avoir survécu à 3.5 ans de scale-up chez Qonto<sup class="citation-needed">[source nécessaire mais véridique]</sup></div>
+                </div>
+            </div>
+            
+            <p>
+                <b>Marianne Medioni</b> est une <a href="#">Product Manager</a> et <a href="#">researcher</a> française, connue pour avoir contribué à la croissance de la licorne <a href="#">Qonto</a> et pour organiser des meetups où les gens parlent de roadmaps en buvant des bières<sup class="reference">[1]</sup>.
+            </p>
+            
+            <p>
+                Décrite par ses collègues comme « celle qui pose toujours LA bonne question en réunion »<sup class="reference">[2]</sup>, elle a développé une expertise rare dans l'art de transformer des post-its en features et des features en succès.
+            </p>
+            
+            <div class="toc">
+                <div class="toc-title">Sommaire</div>
+                <ol>
+                    <li><a href="#carriere">Carrière</a>
+                        <ol>
+                            <li><a href="#qonto">L'ère Qonto (2018-2022)</a></li>
+                            <li><a href="#apres">L'après-Qonto</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#methode">La « Méthode Medioni »</a></li>
+                    <li><a href="#meetups">Product Stories et l'art du meetup</a></li>
+                    <li><a href="#citations">Citations célèbres</a></li>
+                    <li><a href="#prix">Prix et distinctions</a></li>
+                </ol>
+            </div>
+            
+            <h2 id="carriere">Carrière</h2>
+            
+            <h3 id="qonto">L'ère Qonto (2018-2022)</h3>
+            <p>
+                Marianne rejoint <a href="#">Qonto</a> en octobre 2018, alors que la startup n'est qu'une « petite » néo-banque prometteuse. Pendant 3 ans et demi, elle contribue à :
+            </p>
+            <ul style="margin-left: 30px; margin-bottom: 15px;">
+                <li>Améliorer l'expérience utilisateur (sans casser ce qui marchait déjà, un exploit)</li>
+                <li>Ouvrir 3 nouveaux pays (l'Allemagne, l'Italie, l'Espagne — pas mal)</li>
+                <li>Développer un nouveau business de création d'entreprise</li>
+                <li>Participer à la levée de fonds de 486M€<sup class="reference">[3]</sup></li>
+            </ul>
+            
+            <blockquote>
+                « Je suis fière de ce qu'on a accompli. » <br>— Marianne, janvier 2022, probablement en regardant le montant de la Series D
+            </blockquote>
+            
+            <h3 id="apres">L'après-Qonto</h3>
+            <p>
+                Après Qonto, Marianne rejoint <a href="#">Maki People</a> comme Product Manager, puis devient freelance chez <a href="#">Mozza</a>. La légende raconte qu'elle a quitté Qonto non pas pour l'argent, mais parce qu'elle avait « déjà organisé tous les meetups possibles dans leurs locaux »<sup class="citation-needed">[réf. nécessaire]</sup>.
+            </p>
+            
+            <h2 id="methode">La « Méthode Medioni »</h2>
+            <p>
+                La « Méthode Medioni » est un framework de product management reconnu dans les cercles très fermés des afterworks parisiens. Elle repose sur trois piliers<sup class="reference">[4]</sup> :
+            </p>
+            <ol style="margin-left: 30px; margin-bottom: 15px;">
+                <li><b>Le Post-it Sacré</b> : « Si ce n'est pas sur un post-it, ce n'est pas dans la roadmap »</li>
+                <li><b>La Question Qui Tue</b> : « Toujours demander 'mais pourquoi ?' jusqu'à ce que quelqu'un pleure »</li>
+                <li><b>Le Meetup Rédempteur</b> : « Quand le backlog déborde, organise un meetup pour en parler »</li>
+            </ol>
+            
+            <h2 id="meetups">Product Stories et l'art du meetup</h2>
+            <p>
+                Marianne est co-organisatrice de <b>Product Stories</b>, un meetup légendaire où des Product Managers viennent partager leurs histoires de guerre (bugs en prod, stakeholders difficiles, roadmaps impossibles).
+            </p>
+            <p>
+                Les meetups Product Stories sont connus pour leurs discussions Q&A animées par <a href="#">Bruno Correia</a> et pour être « le seul endroit où dire 'on a pivoté' est considéré comme sexy »<sup class="reference">[5]</sup>.
+            </p>
+            
+            <h2 id="citations">Citations célèbres</h2>
+            <ul style="margin-left: 30px; margin-bottom: 15px;">
+                <li>« Un bon PM, c'est quelqu'un qui sait dire non... avec un sourire. » (2021)</li>
+                <li>« La roadmap n'est pas gravée dans le marbre. Elle est gravée dans Notion. » (2022)</li>
+                <li>« Product-Market Fit, c'est quand les utilisateurs arrêtent de t'insulter sur Twitter. » (2023)</li>
+                <li>« Je ne fais pas de la gestion de produit. Je fais de la diplomatie internationale entre la tech et le business. » (2024)</li>
+            </ul>
+            
+            <h2 id="prix">Prix et distinctions</h2>
+            <ul style="margin-left: 30px; margin-bottom: 15px;">
+                <li>🏆 <b>Médaille d'Or du Meetup</b> — Product Stories Paris (2021)</li>
+                <li>⭐ <b>Prix de la Meilleure Question en Réunion</b> — Qonto All-Hands (2020)</li>
+                <li>🎖️ <b>Survivante Certifiée</b> — 3.5 ans en scale-up sans burn-out visible (2022)</li>
+                <li>💎 <b>Légende Vivante</b> — Décerné par ses amis un jeudi soir (2026)</li>
+            </ul>
+            
+            <div class="humor-warning">
+                💚 <b>Ceci est une page créée avec amour</b> par des amis qui trouvent que Marianne mérite sa page Wikipédia.
+                Toutes les informations sont vraies* (*ou presque, c'est l'intention qui compte).
+                <br><br>
+                <small>— Signé : La bande du jeudi soir 🎉</small>
+            </div>
+            
+            <div class="categories">
+                <div class="categories-title">Catégories :</div>
+                <div class="category-links">
+                    <a href="#">Product Manager française</a>
+                    <a href="#">Personnalité de la French Tech</a>
+                    <a href="#">Ancienne de Qonto</a>
+                    <a href="#">Organisatrice de meetups</a>
+                    <a href="#">Experte en post-its</a>
+                    <a href="#">Personne cool</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
